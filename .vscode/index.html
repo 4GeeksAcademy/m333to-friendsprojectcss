@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The official website of Artist Name.">
+		<title>Artist Name | Official Website</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Person",
+						"@id": "#artist",
+						"name": "Artist Name",
+						"url": "#about",
+						"jobTitle": "Artist"
+					},
+					{
+						"@type": "CreativeWork",
+						"@id": "#featured-artwork",
+						"name": "Featured Artwork Title",
+						"creator": { "@id": "#artist" },
+						"description": "A short description of the featured artwork goes here."
+					}
+				]
+			}
+		</script>
+	</head>
+	<body>
+		<header class="site-header">
+			<nav class="site-nav" aria-label="Main navigation">
+				<a class="site-name" href="#home">Artist Name</a>
+				<ul class="nav-links">
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#career">Career</a></li>
+					<li><a href="#upcoming-shows">Upcoming Shows</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="page-section hero" id="home" aria-label="Artist introduction" aria-labelledby="hero-title">
+				<div class="section-content hero-content">
+					<div class="hero-copy">
+						<p class="eyebrow">Official artist website</p>
+						<h1 id="hero-title">Artist Name</h1>
+						<p class="hero-intro">A short introduction to the artist goes here.</p>
+						<a class="text-link" href="#upcoming-shows">Find a show</a>
+					</div>
+					<img
+						class="hero-image"
+						src="rigo-baby.jpeg"
+						alt="Cartoon character wearing glasses with orange and blue eyes"
+						width="300"
+						height="300"
+					>
+				</div>
+			</section>
+
+			<section class="page-section about-section" id="about" aria-labelledby="about-title">
+				<div class="section-content">
+					<p class="eyebrow">The person behind the music</p>
+					<h2 id="about-title">About Me</h2>
+					<article class="content-article">
+						<h3>A little about the artist</h3>
+						<p>Add the artist's introduction here.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="page-section career-section" id="career" aria-labelledby="career-title">
+				<div class="section-content">
+					<p class="eyebrow">The journey so far</p>
+					<h2 id="career-title">Career</h2>
+					<article class="content-article">
+						<h3>Selected highlights</h3>
+						<p>Add career milestones, releases, or other highlights here.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="page-section shows-section" id="upcoming-shows" aria-labelledby="shows-title">
+				<div class="section-content">
+					<p class="eyebrow">Come see a live show</p>
+					<h2 id="shows-title">Upcoming Shows</h2>
+					<article class="content-article">
+						<h3>Live dates</h3>
+						<p>Upcoming show details will be added here.</p>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>&copy; <span>Artist Name</span></p>
+		</footer>
+	</body>
+</html>
